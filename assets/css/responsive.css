@@ -1,0 +1,246 @@
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container {
+        padding: 0 16px;
+    }
+/* creative-kitchen */
+    .cover .cover-img {
+        width: 360px;
+        height: 490px;
+    }
+    .cover .cover-content {
+        width: 320px;
+    }
+/* best-work */
+    #best-work .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 364px 364px 364px;
+    }
+    .best-item:nth-child(1),
+    .best-item:nth-child(2) {
+        grid-row: 1 / 2;
+    }
+    .best-item:nth-child(3),
+    .best-item:nth-child(4) {
+        grid-row: 2 / 3 ;
+    }
+    .best-item:nth-child(5),
+    .best-item:nth-child(6) {
+        grid-row: 3 / 4 ;
+    }
+/* client */
+    .client-cover {
+        justify-content: space-around;
+    }
+    .client-about {
+        margin-left: 0;
+    }
+    .client-cover .client-content {
+        width: 440px;
+        margin-right: 0;
+    }
+/* contact */
+    .contact-address .contact-address_item p {
+        font-size: 16px;
+    }
+
+/* about us */
+/* instagram */
+    #instagram .cover-insta {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  300px 300px ;
+    }
+/* work-page */
+#work-page .cover__work-item {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+/* Mobile */
+@media (max-width: 740px) {
+/* header */
+
+    .container {
+        padding: 0 16px;
+    }
+    .header nav .menu-btn {
+        display: block;
+    }
+    .container .nav_pc {
+        display: none;
+    }
+/* creative-kitchen */
+    #do > p {
+        font-size: 50px;
+    }
+    .cover {
+        flex-wrap: wrap;
+    }
+    .cover .cover-img {
+        max-width: 560px;
+        max-height: 100%;
+    }
+    .cover .cover-content {
+        margin-top: 20px;
+    }
+    .title p {
+        font-size: 25px;
+    }
+    .title p span {
+        font-size: 42px;
+    }
+    .cover .cover-content .content {
+        max-width: 100%;
+    }
+    .cover .cover-content button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+/* art-installation */
+    #art .cover-content {
+        order: 2;
+    }
+    #art .cover-img {
+        order: 1;
+    }
+/* best-work */
+    #best-work > p {
+        font-size: 50px;
+    }
+    #best-work .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 364px 364px 364px 364px 364px 364px;
+    }
+    .best-item:nth-child(1) {
+        grid-row: 1 / 2;
+    }
+    .best-item:nth-child(2) {
+        grid-row: 2 / 3 ;
+    }
+    .best-item:nth-child(3) {
+        grid-row: 3 / 4 ;
+    }
+    .best-item:nth-child(4) {
+        grid-row: 4 / 5;
+    }
+    .best-item:nth-child(5) {
+        grid-row: 5 / 6 ;
+    }
+    .best-item:nth-child(6) {
+        grid-row: 6 / 7 ;
+    }
+/* best-team */
+    #best-team .container > p {
+        font-size: 50px;
+    }
+    .img-item .name h1 {
+        font-size: 30px;
+    }
+/* client */
+    #client .container > p {
+        font-size: 50px;
+    }
+    .client-cover {
+        flex-wrap: wrap;
+    }
+    .client-about {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .client-content {
+        margin: 24px auto 0;
+        text-align: left;
+    }
+    .client-about .line_client-about {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .client-slider .client-item {
+        width: 330px;
+        height: 200px;
+    }
+    .client-slider .client-item img {
+        width: 330px;
+        min-width: 100%;
+    }
+/* contact */
+    #contact .container > p {
+        font-size: 50px;
+    }
+    .contact-cover {
+        flex-wrap: wrap;
+    }
+    .contact-cover .contact-detail {
+        margin: -38px 0px 0 0;
+    }
+    .contact-cover .contact-detail button {
+        margin-top: 40px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact-address {
+        margin-top: 70px;
+        order: 2;
+    }
+    .contact-address .contact-address_item p {
+        font-size: 14px;
+    }
+    .contact-detail {
+        order: 1;
+    }
+    .social .social-item {
+        width: 35px;
+        height: 35px;
+    }
+    .social .social-item i {
+        line-height: 35px;
+    }
+/* footer */
+    .footer .container {
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+    .footer .container p:last-child {
+        font-size: 12px;
+    }
+
+/* about us */
+
+
+    #do .cover-img .cover-content__aboutus {
+        margin: 0 auto;
+    }
+    #do .cover-img .cover-content__aboutus .content__aboutus {
+        text-align: center;
+        margin: 0 auto;
+    }
+    #do .cover-img .line__aboutus {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* achievement */
+    .achievement .container {
+        flex-wrap: wrap;
+    }
+    .achievement .achievement-item {
+        min-width: 260px;
+        margin-top: 30px;
+    }
+    .achievement .achievement-item:first-child {
+        margin-top: 0;
+    }
+    /* instagram */
+    #instagram .cover-insta {
+        grid-template-columns: 1fr;
+        grid-template-rows:  400px 400px 400px 400px 400px;
+    }
+    /* work-page */
+    #work-page .cover__work-item  {
+        grid-template-columns: 1fr;
+    }
+    #work-page .container li a::after {
+        top: 60px;
+    }
+
+}
+
